@@ -1,0 +1,26 @@
+<table border="1" style="border-collapse: collapse; border-color: pink;">
+  <tr>
+    <th>No.</th>
+    <th>Pre-Requirements</th>
+    <th>Use-Case</th>
+    <th>Expected Result</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>T24 console with initial condition for LVP transactions</td>
+    <td>User initiates a new FPS payment transaction in T24 for a domestic bank via the Hong Kong clearing house (HKICL)</td>
+    <td>T24 successfully books the FPS payment entry, collects applicable charges, and settles with the domestic bank through HKICL</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>T24 console with initial condition for LVP transactions</td>
+    <td>User initiates a new CCASS payment transaction in T24 for the Hong Kong Stock Exchange via HKICL</td>
+    <td>T24 successfully books the CCASS payment entry and settles with the Hong Kong Stock Exchange through HKICL</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>T24 integrated with RPS (Regional Payment System)</td>
+    <td>RPS sends an LVP transaction file to T24 in real-time</td>
+    <td>T24 automatically books the transaction entries, collects necessary charges, and provides real-time transaction status updates to RPS</td>
+  </tr>
+</table>

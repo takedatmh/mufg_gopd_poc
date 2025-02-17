@@ -1,0 +1,51 @@
+<table border="1" style="border-collapse: collapse; border-color: pink;">
+<tr>
+<th>No</th>
+<th>Pre-Requirements</th>
+<th>Use-Case</th>
+<th>Expected Result</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>User attempts to create an outgoing FCY remittance transaction in T24</td>
+<td>
+<p>T24 checks the receiver country/entity against the caution notice list:</p>
+<ul>
+<li>If receiver country has Caution Notice A, allow transaction but display warning</li>
+<li>If receiver bank has Caution Notice B, allow transaction but display warning</li>
+<li>If receiver country has Caution Notice C, display warning and require override</li>
+<li>If receiver entity has Caution Notice B and receiver country has Caution Notice C, display country warning and require override</li>
+</ul>
+</td>
+<td>
+<p>Transactions are processed according to the appropriate caution notice level, with warnings displayed and overrides required as per MUFG requirements.</p>
+<p>Transactions involving high-risk countries/entities under Caution Notice C undergo additional scrutiny before being allowed.</p>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>User attempts to amend an existing outgoing FCY remittance transaction in T24 repair screen</td>
+<td>
+<p>T24 re-evaluates the caution notice status based on the amended transaction details:</p>
+<ul>
+<li>If new receiver country has Caution Notice A, allow amendment but display warning</li>
+<li>If new receiver bank has Caution Notice B, allow amendment but display warning</li>  
+<li>If new receiver country has Caution Notice C, display warning and require override</li>
+<li>If new receiver entity has Caution Notice B and new receiver country has Caution Notice C, display country warning and require override</li>
+</ul>
+</td>
+<td>
+<p>Amended transactions are checked against caution notices, with appropriate warnings and overrides required based on the new transaction details.</p>
+<p>High-risk amendments involving Caution Notice C countries/entities undergo scrutiny before being allowed.</p>
+</td>
+</tr>
+
+</table>
+
+Notes:
+- The Pre-Requirements describe the initial T24 condition before the caution notice check is triggered.
+- The Use-Case outlines the new caution notice check functionality implemented in T24 per MUFG requirements.
+- The Expected Result confirms that transactions are properly evaluated, with warnings and overrides applied based on the appropriate caution notice level as required by MUFG.
+- No other test cases could be derived from the provided documentation for outgoing FCY remittance caution notice checks.

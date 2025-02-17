@@ -1,0 +1,67 @@
+<table border="1" style="border-color:pink">
+  <tr>
+    <th>No</th>
+    <th>Pre-Requirements</th>
+    <th>Use-Case</th>
+    <th>Expected Result</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>T24 initial condition with customer account opening functionality.</td>
+    <td>
+      <b>Use-Case: Account Opening with Additional Customer Details</b><br>
+      In the Account Opening screen:
+      <ol>
+        <li>Input customer details like name, address, etc.</li>
+        <li>Input additional customer details like occupation, employer, income source, etc.</li>
+        <li>Select account type and other account-related details</li>
+        <li>Review and submit the application</li>
+      </ol>
+    </td>
+    <td>
+      <b>Expected Result:</b><br>
+      The system should allow capturing additional customer details beyond the basic information during account opening.
+      <br>After submission, the customer's account should be created with all details recorded.
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Customer has an existing account in T24.</td>
+    <td>
+      <b>Use-Case: Update Existing Customer Details</b><br>
+      In the Customer Details screen:
+      <ol>
+        <li>Search and select an existing customer</li>
+        <li>Modify customer details like address, contact information, etc.</li>
+        <li>Submit the changes</li>
+      </ol>
+    </td>
+    <td>
+      <b>Expected Result:</b><br>
+      The system should allow updating customer details for an existing customer record.
+      <br>After submission, the customer's updated information should be reflected in their account records.
+    </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Initial T24 configuration without customer screening functionality.</td>
+    <td>
+      <b>Use-Case: Customer Screening and Risk Assessment</b><br>
+      During the Account Opening process:
+      <ol>
+        <li>Input customer details</li>
+        <li>Trigger customer screening process</li>
+        <li>System performs screening against watch lists, risk databases, etc.</li>
+        <li>Display screening results with risk level</li>
+        <li>Proceed with account opening based on screening outcome</li>
+      </ol>
+    </td>
+    <td>
+      <b>Expected Result:</b><br>
+      The system should perform customer screening and risk assessment as part of the account opening process.
+      <br>Based on the screening results and risk level, the system should either allow or restrict account opening.
+    </td>
+  </tr>
+</table>
+
+Note: The above test cases are based on the understanding of the provided documents, specifically the "Requirement Description," "Business Solution," and "Mockup Screen" sections. The use-cases describe the operations of the new functions, and the expected results align with MUFG's business requirements. If any information is unclear or missing, please provide additional context or clarification.

@@ -1,0 +1,40 @@
+<table border="1" style="border-collapse: collapse; border-color: pink;">
+<tr>
+    <th>No.</th>
+    <th>Pre-Requirements</th>
+    <th>Use-Case</th>
+    <th>Expected Result</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Customer account is opened in T24</td>
+    <td>From Customer Account screen, navigate to field "Customer Group" and input customer group code</td>
+    <td>Customer group code is successfully populated and account is assigned to the specified customer group</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Multiple customer groups are configured in T24</td>
+    <td>From Customer Maintenance screen, create a new customer group with specified settings (e.g. credit limit, allowed products)</td>
+    <td>New customer group is created with the defined settings applied</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Account is assigned to a customer group</td>
+    <td>From Customer Account screen, click "View Group Details" to see the settings inherited from the assigned customer group</td>
+    <td>Details of assigned customer group and its settings (credit limit, allowed products, etc.) are displayed</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Account officer user is configured in T24</td>
+    <td>Log in as the account officer user and navigate to "Pending Approvals" screen</td>
+    <td>List of accounts pending approval by the account officer is displayed</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Account is pending approval</td>
+    <td>From "Pending Approvals" screen, select the account and click "Approve" or "Reject" with comments</td>
+    <td>Account is either approved and activated, or rejected with provided comments recorded</td>
+</tr>
+</table>
+
+Note: The above test cases are based on the understanding of the requirements and mockup screens described in the MUFGCB-5-3-3-23-HLSD-JIRA-7 document. Some assumptions were made where details were unclear or missing from the given context.

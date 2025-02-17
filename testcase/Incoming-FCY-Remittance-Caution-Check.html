@@ -1,0 +1,44 @@
+<table border="1" style="border-collapse: collapse; border-color: pink;">
+  <tr>
+    <th>No</th>
+    <th>Pre-Requirements</th>
+    <th>Use-Case</th>
+    <th>Expected Result</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>User amends an incoming FCY Remittance in T24 Repair screen</td>
+    <td>Sender Entity has no Caution Notice record</td>
+    <td>Transaction will be committed successfully with no warning message</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>User amends an incoming FCY Remittance in T24 Repair screen</td>
+    <td>Sender Country has Caution Notice 'A'</td>
+    <td>Transaction will be committed successfully with no warning message</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>User amends an incoming FCY Remittance in T24 Repair screen</td>
+    <td>Sender Country has Caution Notice 'B' and receipt of cover funds is not confirmed</td>
+    <td>Transaction will display a warning message requiring Department Head's determination. User can override the warning.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>User amends an incoming FCY Remittance in T24 Repair screen</td>
+    <td>Sender Country has Caution Notice 'C' and receipt of cover funds is not confirmed</td>
+    <td>Transaction will display a warning message requiring General Manager's determination. User can override the warning.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Incoming FCY Remittance transaction</td>
+    <td>Transaction is conducted among MUFG Head Office, branches, or subsidiary banks</td>
+    <td>No Caution Notice check required</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Incoming FCY Remittance transaction</td>
+    <td>Payment is made by JBIC, NEXI or an international institution with irrevocable commitment</td>
+    <td>No Caution Notice check required</td>
+  </tr>
+</table>

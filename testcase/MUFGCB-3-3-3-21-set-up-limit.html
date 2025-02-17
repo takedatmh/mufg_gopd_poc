@@ -1,0 +1,55 @@
+<table border="1" style="border-collapse:collapse; border-color:pink;">
+<tr>
+    <th>No.</th>
+    <th>Pre-Requirements</th>
+    <th>Use-Case</th>
+    <th>Expected Result</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Customer record created in T24</td>
+    <td>Access Limits > Main Operations > Maintain/Reverse Limit screen in T24. Select the customer and create a new limit with the following details:
+    <br>- Limit Type (Revolving/Non-revolving)
+    <br>- Limit Amount
+    <br>- Limit Currency
+    <br>- Limit Expiry Date
+    <br>- Allowed Products (Fund Based, Non-Fund Based, etc.)
+    <br>- Allowed Currencies
+    </td>
+    <td>A new limit is successfully created for the customer with the specified parameters like limit type, amount, currency, expiry, allowed products and currencies.</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Limit created for a customer</td>
+    <td>Access the Limits screen and add child limits for the main corporate limit with parameters like:
+    <br>- Child Entity Name 
+    <br>- Child Limit Amount
+    <br>- Child Limit Currency
+    <br>- Allowed Products
+    <br>- Allowed Currencies
+    </td>
+    <td>Child limits are successfully created under the main corporate limit with the specified details. The sum of all child limits should not exceed the main limit amount.</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Corporate hierarchy available in Customer Record</td> 
+    <td>While creating/maintaining limits, map the corporate hierarchy details from the customer record. Assign limits at parent and child levels as per the hierarchy.</td>
+    <td>Limits are successfully assigned at different levels of the corporate hierarchy based on the customer details.</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Limits created for a customer</td>
+    <td>Access the Limits screen and add any limit restrictions like:
+    <br>- Branch Restrictions
+    <br>- Currency Restrictions 
+    <br>- Customer Restrictions
+    </td>  
+    <td>The specified restrictions on branches, currencies and customers are successfully applied to the selected limit.</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Limit created with Upfront Fees</td>
+    <td>For a selected limit, access the Available Marker field and put the limit on hold until the upfront fees are settled.</td>
+    <td>The limit is successfully put on hold status until the upfront fees payment is processed. The limit utilization is blocked.</td>
+</tr>
+</table>
